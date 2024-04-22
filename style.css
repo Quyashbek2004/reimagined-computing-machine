@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    transition: .2s linear;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.topnav{
+    position: fixed;
+    top:0; left:0; right:0;
+}
+
+a{
+    text-decoration: none;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+}
+.logo{
+    max-height: 60px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+
+}
+nav ul li a{
+    color: white;
+    position: relative;
+    padding: 5px 0;
+}
+nav ul li a:hover{
+    color: #5347fd;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #5347fd;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.btn{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background: #14114bc4;
+    border: 2px solid #14114bc4;
+}
+.btn:hover{
+    background: transparent;
+    border-color: white;
+    color: white;
+}
+.content{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+}
+.content h1{
+    color: white;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 100%;
+}
+.content h1 span{
+    color: #5347fd;
+}
+.content p{
+    width: 55%;
+    color: #757575;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.About{
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+}
+
+.About .h1{
+    color: white;
+    font-size: 75px;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 100%;
+    float: left;
+}
+
+.About h1 span{
+    color: #5347fd;
+}
+
+.projects{
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+}
+
+.projects .h1{
+    color: white;
+    font-size: 75px;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 100%;
+    float: left; 
+}
+
+.projects h1 span{
+    color: #5347fd;
+}
+
+.contact{
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+}
+
+.contact .h1{
+    color: white;
+    font-size: 75px;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 100%;
+    float: left; 
+}
+
+.contact h1 span{
+    color: #5347fd;
+}
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap:1.5rem;
+    align-items: center;
+}
+
+.contact .row form{
+    flex:1 1 40rem;
+    padding:1rem 1.5rem;
+    border-radius: .5rem;
+}
+
+.contact .row form .box{
+    padding:1rem;
+    font-size: 1rem;
+    color:#333;
+    text-transform: none;
+    box-shadow: 0 .2rem .2rem white;
+    border:.1rem solid white;
+    border-radius: .2rem;
+    margin:.3rem 0;
+    width: 70%;
+}
+
+.contact .row form .box:focus{
+    border-color: #5347fd;
+}
+
+.contact .row form textarea{
+    height: 5rem;
+    resize: none;
+}
+
